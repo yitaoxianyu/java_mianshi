@@ -1,7 +1,6 @@
-package duoxiancheng;
+package 多线程;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.locks.Lock;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Demo02 {
 
@@ -79,10 +78,10 @@ public class Demo02 {
         */
 
         //这个可以让各个线程不能同时调用这个对象的方法,以这个对象加锁
-        Synchronized sy = new Synchronized();
+        //Synchronized sy = new Synchronized();
         //假如我在这里创建一个新的对象实例,此时runnable1和2不会进行锁的争抢,锁的作用也就失效了
         //编译器会将没有作用的锁进行消除
-        Synchronized sy2 = new Synchronized();
+        /*Synchronized sy2 = new Synchronized();
         Runnable runnable1 = sy2::eat;
 
         Runnable runnable2 = sy::drink;
@@ -96,5 +95,11 @@ public class Demo02 {
         thread01.start();
         thread02.start();
         thread03.start();
+        */
+
+        AtomicReference<Integer> atomicReference = new AtomicReference<>(10);
+        atomicReference.compareAndSet(10,20);
+        System.out.println(atomicReference.get());
     }
 }
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f75c36c-411e-42c2-bc23-1b64ad69016a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/java_mianshi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java面试.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoxiancheng/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoxiancheng/Demo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoxiancheng/Synchronized.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoxiancheng/Synchronized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoxiancheng/线程中的一些定义" beforeDir="false" afterPath="$PROJECT_DIR$/duoxiancheng/线程中的一些定义" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/ThreadPoolTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/ThreadPoolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Demo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Demo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Synchronized.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Thread01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Thread02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/Thread03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/线程中的一些定义" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_mianshi/duoxiancheng/线程中的一些定义" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2oppAQ0DlTLoJsJICvbnLAyguMQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/86132/Desktop/helv/java_mianshi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Demo01.executor": "Run",
+    "应用程序.Demo02.executor": "Run",
+    "应用程序.ThreadPoolTest.executor": "Run"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7f75c36c-411e-42c2-bc23-1b64ad69016a" name="更改" comment="" />
+      <created>1731576227746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731576227746</updated>
+      <workItem from="1731576228821" duration="5617000" />
+      <workItem from="1731599097187" duration="549000" />
+      <workItem from="1731628943304" duration="595000" />
+      <workItem from="1733314855537" duration="3164000" />
+      <workItem from="1733375636563" duration="11933000" />
+      <workItem from="1733460672402" duration="7587000" />
+      <workItem from="1733541776054" duration="36000" />
+      <workItem from="1733541826727" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
