@@ -97,9 +97,20 @@ public class Demo02 {
         thread03.start();
         */
 
-        AtomicReference<Integer> atomicReference = new AtomicReference<>(10);
-        atomicReference.compareAndSet(10,20);
-        System.out.println(atomicReference.get());
+//        AtomicReference<Integer> atomicReference = new AtomicReference<>(10);
+//        atomicReference.compareAndSet(10,20);
+//        System.out.println(atomicReference.get());
+
+        Object o = new Object();
+
+        Runnable runnable1 = new Runnable() {
+            @Override
+            public void run() {
+                synchronized (o){
+
+                }
+            }
+        };
     }
 }
 
