@@ -1,0 +1,8 @@
+为什么要使用Spring : Spring提供了ioc容器,可以自动管理对象,可以实现项目中的解耦
+什么是javaBean : 有一定规范的java对象(成员变量为私有,提供对应的get/set方法)
+在Spring中如何指定Bean的单例/多例模式 : 在bean标签中的scope属性指定singleton/prototype
+autowire属性中byName和byType有什么区别 :
+    byName是根据构造函数的名称进行寻找是否有对应name属性的bean类(例如 : SetABC,他会从ioc容器中寻找name属性为ABC的bean)
+    byType是根据构造函数中的传入参数的类进行寻找(例如SetABC(E e),会优先寻找class属性指定为E的bean)
+如何自定义调用构造方法 :
+    使用constructor-arg标签指定值和与之对应的参数,前提是有对应的构造方法
