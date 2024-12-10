@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="Student" id="student" init-method="init" destroy-method="destroy" scope="prototype"></bean>
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
+>
+    <bean name = "student" class="com.xianyu.Student"></bean>
+    <bean name = "aopTest" class="com.xianyu.AopTest"></bean>
+
+    <aop:config>
+        <aop:aspect ref="aopTest">
+            <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String))"/>
+            <aop:before method="before" pointcut-ref="test"/>
+            <aop:after-returning method="after" pointcut-ref="test"/>
+        </aop:aspect>
+    </aop:config>
 </beans>

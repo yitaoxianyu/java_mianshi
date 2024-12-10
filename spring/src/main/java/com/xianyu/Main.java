@@ -1,3 +1,5 @@
+package com.xianyu;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -5,8 +7,8 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
         Student student1 = (Student) context.getBean("student");
-        Student student2 = (Student) context.getBean("student");
-        System.out.println(student1); System.out.println(student2);
+        System.out.println(student1);
+        student1.say("111");
         context.close();
     }
 }
