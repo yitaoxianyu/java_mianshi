@@ -1,14 +1,20 @@
 package com.xianyu;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.xianyu.config.Config;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
+/*
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-
         Student student1 = (Student) context.getBean("student");
-        System.out.println(student1);
+
         student1.say("111");
         context.close();
+*/
+
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+        Student student1 = (Student) context.getBean("student1");
+        System.out.println(student1.toString());
     }
 }

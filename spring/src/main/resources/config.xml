@@ -5,14 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
 >
-    <bean name = "student" class="com.xianyu.Student"></bean>
-    <bean name = "aopTest" class="com.xianyu.AopTest"></bean>
+    <bean name="student" class="com.xianyu.Student"/>
+    <bean name="aopTest" class="com.xianyu.AopTest"/>
+    <bean name = "advisor" class="com.xianyu.BeforeAdvisor"/>
 
     <aop:config>
-        <aop:aspect ref="aopTest">
-            <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String))"/>
-            <aop:before method="before" pointcut-ref="test"/>
-            <aop:after-returning method="after" pointcut-ref="test"/>
-        </aop:aspect>
+        <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String)))"/>
+        <aop:advisor advice-ref="advisor" pointcut-ref="test"/>
     </aop:config>
+
 </beans>
