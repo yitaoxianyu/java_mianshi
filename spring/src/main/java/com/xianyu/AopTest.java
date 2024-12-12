@@ -2,17 +2,26 @@ package com.xianyu;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
+
+@Aspect
+@Component
 public class AopTest {
 
+
+    @Before("execution(* com.xianyu.Student.say(String))")
     public void before(JoinPoint joinPoint)
     {
         //joinPoint可以拿到方法
         System.out.println("before");
-
+        System.out.println(Arrays.toString(joinPoint.getArgs()));
     }
+
 
     public void after(){
         System.out.println("after");

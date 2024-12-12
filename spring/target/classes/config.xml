@@ -11,7 +11,9 @@
 
     <aop:config>
         <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String)))"/>
-        <aop:advisor advice-ref="advisor" pointcut-ref="test"/>
+        <aop:aspect ref="aopTest">
+            <aop:after method="before" pointcut-ref="test"/>
+        </aop:aspect>
     </aop:config>
 
 </beans>
