@@ -16,5 +16,8 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         Student student1 = (Student) context.getBean("student1");
         student1.say("hello world");
+
+
+
     }
 }
