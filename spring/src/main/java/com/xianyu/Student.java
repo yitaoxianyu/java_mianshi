@@ -1,8 +1,8 @@
 package com.xianyu;
 
-
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Data
@@ -14,6 +14,7 @@ public class Student {
     private Integer age;
 
     @Autowired
+    @Qualifier(value = "card1")
     private Card card;
 
 
@@ -28,8 +29,6 @@ public class Student {
     public Student(Card card){
         this.card = card;
     }
-
-
 
     public void say(String content){
         System.out.println(content);

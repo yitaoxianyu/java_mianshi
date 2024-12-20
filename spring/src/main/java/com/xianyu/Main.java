@@ -1,6 +1,8 @@
 package com.xianyu;
 
 import com.xianyu.config.Config;
+import com.xianyu.mapper.TestMapper;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -14,10 +16,8 @@ public class Main {
 */
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-        Student student1 = (Student) context.getBean("student1");
-        student1.say("hello world");
-
-
-
+        SqlSessionTemplate sqlSessionTemplate = context.getBean(SqlSessionTemplate.class);
+        TestMapper mapper = context.getBean(TestMapper.class);
+        mapper.getUser();
     }
 }

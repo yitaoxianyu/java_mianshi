@@ -67,7 +67,7 @@ mark word
     是否是偏向锁
         无锁 0    偏向锁  1
     无锁 hashcode  分代年龄
-    偏向锁  线程ID  分代年龄
+    偏向锁  线程ID
     轻量级  指向栈中锁记录的指针
     重量级锁  monitor对象
 klass point  类指针
@@ -80,7 +80,7 @@ Monitor
 
 
 对于一个变量 :
-AtomicReference : 可以传入初始值,并且他的compare and set是可以保证原子性的(使用传统的if判断不能保证原子性操作)
+AtomicReference : 可以传入初始值,并且他的compare and swap是可以保证原子性的(使用传统的if判断不能保证原子性操作)
 AtomicStampReference : 传入两个参数,一个是初始值另一个是版本号,可以保证aba的问题发生
 对于对象中的一个字段 :
 可以使用AtomicFieldUpdater(字段必须设置为public,并且不能被static修饰,并且为基本数据类型)

@@ -5,15 +5,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
 >
-    <bean name="student" class="com.xianyu.Student"/>
-    <bean name="aopTest" class="com.xianyu.AopTest"/>
-    <bean name = "advisor" class="com.xianyu.BeforeAdvisor"/>
 
-    <aop:config>
-        <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String)))"/>
-        <aop:aspect ref="aopTest">
-            <aop:after method="before" pointcut-ref="test"/>
-        </aop:aspect>
-    </aop:config>
+<!--    <bean name="student" class="com.xianyu.Student"/>-->
+<!--    <bean name="aopTest" class="com.xianyu.AopTest"/>-->
+<!--    <bean name = "advisor" class="com.xianyu.BeforeAdvisor"/>-->
+<!--    <bean name ="card" class="com.xianyu.Card"/>-->
+<!--    -->
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="test" expression="execution(* com.xianyu.Student.say(String)))"/>-->
+<!--        <aop:aspect ref="aopTest">-->
+<!--            <aop:after method="before" pointcut-ref="test"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
 
 </beans>
